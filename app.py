@@ -4,11 +4,13 @@ from collections import defaultdict, Counter
 from nltk.tokenize import word_tokenize
 import nltk
 
-# Ensure the 'punkt' tokenizer is available
+# Ensure the 'punkt' tokenizer is available nltk.download('punkt_tab')
 try:
     nltk.data.find('tokenizers/punkt')
+
 except nltk.downloader.DownloadError:
     nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
 
 
 @st.cache_data # Caching the function to avoid re-training on every run
