@@ -2,8 +2,9 @@
 
 This project is an interactive web application built with Streamlit that demonstrates the concepts of N-gram models for natural language processing. It can read text input, build predictive models, and then offer real-time next-word predictions and autocomplete suggestions based on user input.
 
+<img width="1907" height="971" alt="image" src="https://github.com/user-attachments/assets/09a383e3-dc7a-4bef-b18e-6b18b5234f3c" />
 
-## ✨ Features
+## Features
 
 * **Dynamic N-Gram Modeling**: Builds multiple n-gram models (bigram, trigram, etc.) from the source text.
 
@@ -13,7 +14,7 @@ This project is an interactive web application built with Streamlit that demonst
 
 * **Interactive UI**: A simple and clean user interface powered by Streamlit for easy interaction.
 
-## ⚙️ How It Works
+## How It Works
 
 The application tokenizes the text from a given source file and builds a series of N-gram models. An N-gram is a contiguous sequence of *n* items (in this case, words) from a sample of text.
 
@@ -24,7 +25,7 @@ The application tokenizes the text from a given source file and builds a series 
 * **Backoff Strategy**: If the context isn't found, it "backs off" to a smaller model (e.g., bigram) and tries again. This makes the predictions more robust.
 
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
 
@@ -85,7 +86,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ```
 
-## 🛠️ Built With
+## Built With
 
 * [Python](https://www.python.org/)
 
