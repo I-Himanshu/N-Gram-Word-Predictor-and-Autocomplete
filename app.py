@@ -8,7 +8,7 @@ import nltk
 try:
     nltk.data.find('tokenizers/punkt')
 
-except nltk.downloader.DownloadError:
+except Exception as Ex:
     nltk.download('punkt', quiet=True)
     nltk.download('punkt_tab', quiet=True)
 
