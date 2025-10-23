@@ -21,7 +21,7 @@ def load_text(path):
             print(f"Error reading PDF file: {e}")
             return ""
     else:
-        print("File type detected: Text file")
+        print(f"File type detected: Text file {path}")
         try:
             with open(path, 'r', encoding='utf-8') as f:
                 text = f.read()
