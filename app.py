@@ -13,7 +13,7 @@ except Exception as Ex:
     nltk.download('punkt_tab', quiet=True)
 
 
-@st.cache_data # Caching the function to avoid re-training on every run
+@st.cache_data
 def build_models(text, max_n=3):
     """
     Build multiple n-gram models from the text.
@@ -63,6 +63,8 @@ def get_autocomplete_suggestions(models, input_words, max_n=3, top_k=5):
             for word, count in sorted_suggestions[:top_k]:
                 probability = (count / total_occurrences) * 100
                 result.append((word, f"{probability:.2f}%"))
+                if !word:
+                    continue
             return result, f"Found in {n}-gram model with context `{context}`"
             
     return [], "No autocomplete suggestions found."
