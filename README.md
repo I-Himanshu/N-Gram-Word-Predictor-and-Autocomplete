@@ -22,8 +22,6 @@ The application tokenizes the text from a given source file and builds a series 
 
 * **Prediction**: To predict the next word, it looks for the current context in the largest model (e.g., trigram). If found, it returns the most frequent next words.
 
-* **Backoff Strategy**: If the context isn't found, it "backs off" to a smaller model (e.g., bigram) and tries again. This makes the predictions more robust.
-
 
 ## Getting Started
 
